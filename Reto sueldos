@@ -1,4 +1,6 @@
 #RETO 02 SESION 7
+install.packages("rvest")
+library(rvest)
 url_reto = "https://www.glassdoor.com.mx/Sueldos/data-scientist-sueldo-SRCH_KO0,14.htm"
 file = read_html(url_reto)
 tables = html_nodes(file, "table")
